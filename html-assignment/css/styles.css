@@ -9,7 +9,52 @@ header, footer {
     background-color: #D00000;
 }
 
-.site-title {
+.site-title, footer, nav h3 {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+section ul {
+    list-style: square;
+}
+
+
+section ul :nth-child(odd){
+    background-color: #E8E673;
+}
+
+
+
+nav {
+    background-color: #2E5EAA;
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: azure;
+    font-family: serif;
+    font-size: 22px;
+}
+
+nav a:hover {
+    background-color: #E8E673
+}
+
+
+
+
+
+
+
+
+
+
