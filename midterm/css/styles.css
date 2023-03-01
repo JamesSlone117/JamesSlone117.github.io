@@ -112,7 +112,15 @@ form button {
     border: 1px solid black;
 }
 
+
+.my-textbox2 input {
+    width: 900px;
+    height: 60px;
+
+
+}
+
 .my-textbox input {
-    width: 500px;
+    width: 900px;
 
 }
