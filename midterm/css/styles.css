@@ -1,10 +1,11 @@
-/* Notes: dont keep the top image as a background*/
-body {
+/* changes font and background colour of the page*/
+body { 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #aad4cf;
     font-size: 18px;
 }
 
+/* adds a box section in a different colour on the page to display all the content in */
 .wrapper {
     top: 100%;
     margin: 100px auto;
@@ -13,6 +14,7 @@ body {
     padding: 10px;
 }
 
+/* adjusts the posisioning of the top image on the page to be centered in the middle */
 #wide-starfish-image {
     display: block;
     margin: 0;
@@ -20,6 +22,7 @@ body {
     height: auto;
 }
 
+/* alows the title text to be displayed on top of the image*/
 #title-heading {
     font-size: 2em;
     top: 45%;
@@ -31,27 +34,7 @@ body {
     z-index: 1;
 }
 
-
-.main-text img {
-    float: left;
-    max-width: 20%;
-    height: auto;
-    padding: 10px;
-
-
-}
-
-form label,
-form input,
-form textarea,
-form h4,
-form button {
-    display: block;
-}
-
-
-
-
+/* styles the nav with font size and makes whole text upercase */
 nav ul {
     list-style: none;
     margin: 0;
@@ -61,25 +44,44 @@ nav ul {
     font-size: 2em;
 }
 
-
-
-
+/* displays list items horizontaly */
   .nav-item {
   display: inline;
   line-height: 2em;
   padding: 0 1.5em;
 }
 
+
+/* add dividers inbetween the list items on the nav */
 nav li +li:before{
     content: "|";
     padding: 0 1.5em;
     
 }
 
+/* adjusts the size and alignment of the second starfish image in the main section to be wraped around the text to the right of it */
+.main-text img {
+    float: left;
+    max-width: 20%;
+    height: auto;
+    padding: 10px;
+}
+
+/* displays form in vertical format */
+form label,
+form input,
+form textarea,
+form h4,
+form button {
+    display: block;
+}
+
+/* adds space for content of the form */
 form {
     padding: 10px;
 }
 
+/* styles button of form */
 form button {
     background-color: #aad4cf;
     padding: 10px 22px;
@@ -89,31 +91,35 @@ form button {
     margin-top: 7px;
 }
 
+/* remove list style */
 form ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+/* displays radio button in horizontal*/
 form li {
     display: inline-block;
     margin-right: 20px;
 }
 
+/* adds black border to form */
 .form-box {
     border: 1px solid black;
 }
 
-
+/* adjusts the size of text box 1 and 2 */
+.my-textbox input {
+    width: 900px;
+}
+/* adjusts the size of text box 3 */
 .my-textbox2 input {
     width: 900px;
     height: 60px;
 }
 
-.my-textbox input {
-    width: 900px;
-}
-
+/* align forter to the right of page */
 footer p {
     text-align: right;
 }
