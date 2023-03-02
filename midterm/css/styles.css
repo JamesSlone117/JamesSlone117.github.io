@@ -1,4 +1,4 @@
-/* Notes: dont keep the top image as a  background*/
+/* Notes: dont keep the top image as a background*/
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #aad4cf;
@@ -6,13 +6,12 @@ body {
 }
 
 .wrapper {
+    top: 100%;
     margin: 100px auto;
     width: 1020px;
     background-color: rgb(200, 228, 228);
     padding: 10px;
 }
-
-
 
 #wide-starfish-image {
     display: block;
@@ -20,11 +19,6 @@ body {
     position: relative;
     height: auto;
 }
-
-
-
-
-
 
 #title-heading {
     font-size: 2em;
@@ -58,55 +52,53 @@ form button {
 
 
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+
+
+
+  .nav-item {
+  display: inline;
+  line-height: 2em;
+  padding: 0 1.5em;
+}
+
+nav li +li:before{
+    content: "|";
+    padding: 0 1.5em;
+    
+}
+
 form {
     padding: 10px;
 }
 
-
-
-
-
-nav ul {
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-
-}
-
-nav li + li:before {
-    content: "|";
-    padding: 0 50px;
-}
-
-nav li {
-    font-size: 1.3em;
-    display: inline;
-    margin-right: 125px;
+form button {
+    background-color: #aad4cf;
+    padding: 10px 22px;
+    display: block;
+    font-size: 16px;
+    margin-left: 7px;
+    margin-top: 7px;
 }
 
 form ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-
-form button {
-    background-color: #aad4cf;
-    padding: 15px 32px;
+form li {
     display: inline-block;
-    font-size: 16px;
-    margin: 7px;
-
+    margin-right: 20px;
 }
-
-.li-style {
-    
-    display: inline-block;
-    margin: 10px;
-    
-}
-
-
-
 
 .form-box {
     border: 1px solid black;
@@ -116,11 +108,12 @@ form button {
 .my-textbox2 input {
     width: 900px;
     height: 60px;
-
-
 }
 
 .my-textbox input {
     width: 900px;
+}
 
+footer p {
+    text-align: right;
 }
