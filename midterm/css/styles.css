@@ -107,7 +107,7 @@ form ul {
 /* displays radio button in horizontal*/
 form li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 1px;
 }
 
 /* adds black border to form */
