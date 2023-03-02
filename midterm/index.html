@@ -13,6 +13,8 @@
 
     <div class="wrapper">
 
+        <!-- will create header that contains an image and a title -->
+
         <header>
             <div class="image-container">
                 <h1 id="title-heading">Lone Starfish</h1>
@@ -22,17 +24,17 @@
 
         <nav>
             <ul>
-                <li class = "nav-item"> home</li>
-                <li class = "nav-item"> About</li>
-                <li class = "nav-item"> contact</li>
+                <li class="nav-item"> home</li>
+                <li class="nav-item"> About</li>
+                <li class="nav-item"> contact</li>
             </ul>
         </nav>
 
-         <!-- this article includes the main content of the page with also a visual image representation  -->
+        <!-- this article includes the main content of the page with also a visual image representation  -->
         <article>
             <h2>Life of a Starfish</h2>
             <div class="container">
-               
+
                 <p class="main-text"> <img id="starfish-image" src="images/lone-starfish.jpg"
                         alt="Picture of a Starfish">Swallower catla Black angelfish grunter striped bass scissor-tail
                     rasbora; slender mola. Snapper
@@ -70,6 +72,7 @@
         </article>
 
         <section>
+            <!-- Listing facts about starfish -->
             <div class="fact-section">
                 <h3>Facts about Starfish</h3>
                 <ul>
@@ -84,21 +87,24 @@
 
         <section>
             <h3>Contact to learn more</h3>
-
+            <!-- form that user can fill out and submit -->
             <div class="form-box">
 
                 <form action="index.html">
+                    <!-- Input field for fullname -->
                     <label for="fullname">Fullname</label>
                     <div class="my-textbox">
                         <input type="text" id="fullname" name="fullname" required>
                     </div>
 
+                    <!-- Input field for email -->
                     <div class="my-textbox">
                         <label for="email">Email</label>
 
                         <input type="email" id="email" name="email" required>
                     </div>
 
+                    <!-- Input field for message -->
                     <div class="my-textbox2">
                         <label for="message">Your Message</label>
                         <input type="text" name="message" id="message">
@@ -106,33 +112,27 @@
 
                     <h4>would you like to vist the Starfish?</h4>
 
+                    <!-- radio button selection with options "yes","no" and "maybe" -->
                     <ul>
-                        
-                            <li>
-                                <label for="yes">Yes</label>
-                                <input type="radio" id="yes" name="vist-Starfish" value="yes">
-                            </li>
-                        
 
-                        
+                        <li>
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="yes" name="vist-Starfish" value="yes">
+                        </li>
 
-                            <li>
-                                <label for="no">No</label>
-                                <input type="radio" id="no" name="vist-Starfish" value="no">
+                        <li>
+                            <label for="no">No</label>
+                            <input type="radio" id="no" name="vist-Starfish" value="no">
 
-                            </li>
-                       
+                        </li>
 
-                       
-
-                            <li>
-                                <label for="maybe">Maybe</label>
-                                <input type="radio" id="maybe" name="vist-Starfish" value="maybe">
-                            </li>
-                        
-
+                        <li>
+                            <label for="maybe">Maybe</label>
+                            <input type="radio" id="maybe" name="vist-Starfish" value="maybe">
+                        </li>
                     </ul>
 
+                    <!-- Submit button for the form -->
                     <button type="submit">Send</button>
 
                 </form>
