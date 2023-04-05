@@ -29,20 +29,27 @@
 
     <!-- wrapper class made to section the content in the midle of the page in a spesific size -->
 
-    <div class="wrapper">
 
-        <!-- includes title, disription and connect button -->
-        <header>
-            <img src="images/main-banner.jpg" alt="image of the common area of Star Media">
+
+    <!-- includes title, disription and connect button -->
+    <!-- not fully included in the wrapper div because background image exends past it -->
+    <header>
+        <img src="images/main-banner.jpg" alt="image of the common area of Star Media">
+        <div class="wrapper">
             <h1>Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque incidunt ea deleniti doloribus dolorum
                 qui omnis aperiam reiciendis facere corporis veritatis, cum nobis alias in ducimus inventore, hic
                 accusantium id!</p>
             <button type="button">Connect with us <i class="fa-solid fa-caret-right"></i></button>
+        </div>
+    </header>
 
-        </header>
 
-        <section class="about">
+    <!-- not fully included in the wrapper div because background colour exends past it -->
+
+    <section class="about">
+
+        <div class="wrapper">
             <img src="images/about-us.jpg" alt="picture of a ping pong table">
             <h2>About us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea quos voluptates harum libero illo
@@ -50,10 +57,13 @@
             <p>Nam sequi quod libero in voluptas veniam nisi consequatur dolore ab voluptate. Maxime asperiores cumque
                 fugiat quisquam illum quam nemo commodi. Maiores unde tempora consectetur fugiat nulla cupiditate odio
                 error.</p>
-        </section>
+        </div>
+    </section>
 
-        <!-- every section will have a div to be able to transfer them from moblie to pc 
+    <!-- every section will have a div to be able to transfer them from moblie to pc 
             each has a differnt class for flex posioning and a unique class for main styling in css-->
+
+    <div class="wrapper">
         <section>
             <h2>Our Services</h2>
 
@@ -68,7 +78,7 @@
 
             <div class="marketingcontent services">
                 <img src="images/marketing.jpg" alt="image of computer with charts with numbers">
-                <h3>Digital Transformation</h3>
+                <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quaerat asperiores mollitia maiores,
                     delectus totam voluptas eligendi quam aliquam consequuntur iure. Non odio error ipsum laborum. Vel
                     aliquid ea consequatur.</p>
@@ -108,13 +118,19 @@
 
 
     <!-- no in the wrapper class because exends outside compared to the others -->
+
     <section class="vision">
-        <h3>Our Vision</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aperiam neque dicta libero dolores! Explicabo
-            rem, veritatis enim saepe harum hic. Optio corporis possimus consequatur omnis excepturi aspernatur facere
-            porro!</p>
         <img src="images/vision.jpg" alt="image of paper boats in the water">
-        <button type="button">Learn More <i class="fa-solid fa-caret-right"></i></button>
+
+        <div class="wrapper">
+            <h3>Our Vision</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aperiam neque dicta libero dolores!
+                Explicabo
+                rem, veritatis enim saepe harum hic. Optio corporis possimus consequatur omnis excepturi aspernatur
+                facere
+                porro!</p>
+            <button type="button">Learn More <i class="fa-solid fa-caret-right"></i></button>
+        </div>
     </section>
 
 
@@ -216,19 +232,16 @@
             </div>
 
         </section>
-        
+
     </div>
 
-    <!-- footer not included in the div because background colour exends past it -->
+    <!-- footer not included in the wrapper div because background colour exends past it -->
     <footer>
         <div class="wrapper">
             <p>&copy; Copyright Three Star Media, 2020</p>
             <p>All images are taken from <a href="https://unsplash.com/">unsplash</a></p>
         </div>
     </footer>
-
-
-
 
 </body>
 
