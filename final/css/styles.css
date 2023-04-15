@@ -172,7 +172,38 @@ h2 {
     color: white;
     background-color: #222;
 }
+/* header starts */
 
+
+header p, h1 {
+    color: white;
+}
+
+header .wrapper {
+    flex-direction: column;
+    position: relative;
+    
+    
+}
+
+.header-text {
+    position: absolute;
+ 
+    background-color: #222;
+    padding: 20px 10px 10px 20px;
+
+}
+
+
+/* about */
+
+.about h2 {
+    align-self: start;
+    margin: 1.1rem 1.1rem 1.1rem 0;
+}
+.about p {
+    margin: 5px 0 20px 0;
+}
 
 
 
@@ -194,6 +225,15 @@ h2 {
     p {
         font-size: 1rem;
     }
+
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 28px;
+    }
+
 
 }
 
@@ -223,13 +263,6 @@ h2 {
         justify-content: center;
         margin: 28px;
     }
-
-
-    
-
-
-
-
 
     /* nav customizations starts centering the nav and adding a selective colour for home and logo */
     .topnav {
@@ -265,11 +298,21 @@ h2 {
 
     /* header starts */
 
-    header .wrapper {
+    
+
+
+    /* about display text below the image */
+    
+    .about .wrapper {
         flex-direction: column;
-        
+        position: relative;
     }
 
+    .about img {
+        width: 100%;
+    }
+
+    
 
 
 
