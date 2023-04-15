@@ -154,11 +154,14 @@ h2 {
 }
 
 .button-design {
-    padding: 15px 32px;
+    padding: 30px 70px;
     border: none;
     align-self: start;
     font-size: 1.01rem;
     margin: 1.1rem 1.1rem 1.1rem 0;
+}
+.button-design i {
+    font-size: 1.5rem;
 }
 .btn-yellow {
     color:#222;
@@ -218,6 +221,7 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 28px;
     }
 
 
@@ -263,7 +267,10 @@ h2 {
 
     header .wrapper {
         flex-direction: column;
+        
     }
+
+
 
 
 
