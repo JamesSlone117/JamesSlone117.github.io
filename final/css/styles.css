@@ -158,37 +158,39 @@ h2 {
     border: none;
     align-self: start;
     font-size: 1.01rem;
-    margin: 1.1rem 1.1rem 1.1rem 0;
+    margin: 1.1rem 1.1rem 0 0;
 }
+
 .button-design i {
     font-size: 1.5rem;
 }
+
 .btn-yellow {
-    color:#222;
-    background-color:#c78c06;
+    color: #222;
+    background-color: #c78c06;
 }
 
 .btn-black {
     color: white;
     background-color: #222;
 }
+
 /* header starts */
 
 
-header p, h1 {
+header p,
+h1 {
     color: white;
 }
 
 header .wrapper {
     flex-direction: column;
     position: relative;
-    
-    
 }
 
 .header-text {
     position: absolute;
- 
+
     background-color: #222;
     padding: 20px 10px 10px 20px;
 
@@ -197,14 +199,52 @@ header .wrapper {
 
 /* about */
 
+
+.about {
+    padding: .2rem;
+}
+
 .about h2 {
     align-self: start;
     margin: 1.1rem 1.1rem 1.1rem 0;
 }
+
 .about p {
     margin: 5px 0 20px 0;
 }
 
+/* Our Services */
+.services {
+
+    margin-top: 28px;
+}
+
+.services h3 {
+    padding-bottom: 1.1rem;
+    text-decoration: bold;
+}
+
+.services img {
+    width: 100%;
+}
+
+.services-text {
+    padding: 1.1rem;
+
+}
+
+
+
+
+
+
+/* our vision */
+
+.vision img {
+    width: 100%;
+}
+
+.vision {}
 
 
 
@@ -231,7 +271,8 @@ header .wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 28px;
+        margin-left: 28px;
+        margin-right: 28px;
     }
 
 
@@ -261,7 +302,8 @@ header .wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 28px;
+        margin-left: 28px;
+        margin-right: 28px;
     }
 
     /* nav customizations starts centering the nav and adding a selective colour for home and logo */
@@ -293,16 +335,13 @@ header .wrapper {
 
     /* fix later */
     .search-container input {
-        width: 200%; 
+        width: 200%;
     }
 
     /* header starts */
 
-    
-
-
     /* about display text below the image */
-    
+
     .about .wrapper {
         flex-direction: column;
         position: relative;
@@ -312,7 +351,15 @@ header .wrapper {
         width: 100%;
     }
 
-    
+
+    /* services */
+    .services img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
 
 
 
