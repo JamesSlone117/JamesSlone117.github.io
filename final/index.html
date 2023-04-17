@@ -84,12 +84,18 @@
 
         <div class="wrapper">
             <img src="images/about-us.jpg" alt="picture of a ping pong table">
-            <h2>About us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea quos voluptates harum libero illo
-                magni, modi sint ex magnam. Rem quas mollitia minus nemo officia dolorem ratione ipsa molestiae?</p>
-            <p>Nam sequi quod libero in voluptas veniam nisi consequatur dolore ab voluptate. Maxime asperiores cumque
-                fugiat quisquam illum quam nemo commodi. Maiores unde tempora consectetur fugiat nulla cupiditate odio
-                error.</p>
+            <div>
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea quos voluptates harum libero
+                    illo
+                    magni, modi sint ex magnam. Rem quas mollitia minus nemo officia dolorem ratione ipsa molestiae?</p>
+                <p>Nam sequi quod libero in voluptas veniam nisi consequatur dolore ab voluptate. Maxime asperiores
+                    cumque
+                    fugiat quisquam illum quam nemo commodi. Maiores unde tempora consectetur fugiat nulla cupiditate
+                    odio
+                    error.</p>
+            </div>
+
         </div>
     </section>
 
@@ -208,7 +214,8 @@
                     rem, veritatis enim saepe harum hic. Optio corporis possimus consequatur omnis excepturi aspernatur
                     facere
                     porro!</p>
-                <button class="button-design btn-black" type="button">Learn More <i class="fa-solid fa-caret-right"></i></button>
+                <button class="button-design btn-black" type="button">Learn More <i
+                        class="fa-solid fa-caret-right"></i></button>
             </div>
 
 
@@ -224,15 +231,25 @@
     <div class="wrapper">
 
         <!-- our team section will be using flex to posision in both ways -->
-
+        <h2>Our Team</h2>
         <section class="ourteam">
-            <h2>Our Team</h2>
+
 
             <div class="tan">
-                <img class="johnimage" src="images/john.jpg" alt="image of a person standing ">
-                <div id="johndoe">
 
-                    <div class="ourteam-text">
+
+
+
+
+
+
+                <div class="team-contaner">
+
+                    <div class="teambox">
+                        <img class="johnimage " src="images/john.jpg" alt="image of a person standing ">
+                    </div>
+                    
+                    <div class="ourteam-text teambox">
                         <h3>John Doe</h3>
                         <h4>CEO and Co-Owner</h4>
                         <hr>
@@ -244,12 +261,14 @@
                             tempora aliquam sunt ut doloribus.</p>
                     </div>
 
-                </div>
 
-                <img class="bobimage" src="images/bob.jpg" alt="image of a person standing">
-                <div id="robrite">
-                    <div class="ourteam-text">
-                        <h3>John Doe</h3>
+                    <div class="teambox">
+                        <img class="bobimage " src="images/bob.jpg" alt="image of a person standing">
+                    </div>
+                    
+
+                    <div class="ourteam-text teambox">
+                        <h3>Rob Rite</h3>
                         <h4>CFO and Co-Owner</h4>
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo tenetur
@@ -264,6 +283,8 @@
 
 
                 </div>
+
+
             </div>
 
 
@@ -273,25 +294,29 @@
         <section class="contact">
             <h2>Contact Us</h2>
 
+
             <div class="form-box">
                 <h3>Send us a message</h3>
                 <!-- form starts here -->
                 <form action="index.html">
-                    <!-- Input field for fullname -->
+                    <div id="textboxs">
+                        <!-- Input field for fullname -->
                     <label for="fullname">Fullname</label>
-        
-                        <input class="textbox1" type="text" id="fullname" name="fullname" required>
+
+                    <input class="textbox1" type="text" id="fullname" name="fullname" required>
 
                     <!-- Input field for email -->
                     <label for="email">Email</label>
-                    
-                        <input class="textbox1" type="email" id="email" name="email" required>
+
+                    <input class="textbox1" type="email" id="email" name="email" required>
 
                     <!-- Input field for message -->
                     <label for="message">Your Message</label>
+
+                    <input class="textbox1 textbox2" type="text" name="message" id="message">
+                    </div>
                     
-                        <input class="textbox1 textbox2" type="text" name="message" id="message">
-                   
+
 
                     <!-- Submit button for the form -->
                     <button type="submit">Send</button>

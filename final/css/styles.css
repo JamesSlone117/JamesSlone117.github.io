@@ -175,6 +175,28 @@ h2 {
     background-color: #222;
 }
 
+
+/* nav */
+nav li::first-letter {
+    text-transform: capitalize;
+}
+
+.search-container button {
+    color: #c78c06;
+    border: solid #c78c06;
+    padding: 5px;
+    background-color: #222;
+}
+
+
+
+
+
+
+
+
+
+
 /* header starts */
 
 
@@ -235,7 +257,10 @@ header .wrapper {
     padding: 1.1rem;
 }
 
-.ourteam .ourteam-text, p, h4, h3 {
+.ourteam .ourteam-text,
+p,
+h4,
+h3 {
     padding: 0.5rem;
 }
 
@@ -253,11 +278,7 @@ header .wrapper {
     height: 7rem;
 }
 
-.contact label {
 
-
-    
-}
 
 .contact button {
     background-color: #222;
@@ -281,7 +302,7 @@ th {
 
 table {
     width: 100%;
-    
+
     border-collapse: collapse;
 }
 
@@ -289,7 +310,8 @@ table {
     background-color: #ffe6ac;
 }
 
-.openhours th, td {
+.openhours th,
+td {
     padding: 1rem;
 }
 
@@ -329,19 +351,20 @@ iframe {
 
 
 .vision button {
-    border:1px solid #c78c06;
+    border: 1px solid #c78c06;
 }
 
 
 
-/* our team */
-.ourteam {
+
+ .ourteam {
     flex-direction: column;
 }
 
-.johnimage, .bobimage {
+.johnimage,
+.bobimage {
     max-width: 100%;
-}
+} 
 
 
 
@@ -390,11 +413,70 @@ iframe {
 
     /* services */
 
-    .digitalcontent {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 800p;
+
+    /* header */
+    header {
+        
     }
+
+
+    /* about */
+    .about .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .about img {
+        order: 1;
+        margin-right: 1rem;
+        max-width: 50%;
+    }
+
+    .about-text {
+        order: 2;
+        max-width: 50%;
+    }
+
+
+    /* our team */
+
+    .team-contaner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-self: center;
+    }
+
+    .team-contaner .teambox:nth-child(3) {
+        order: 1;
+    }
+
+
+    /* contact */
+    #textboxs {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
+      
+      
+      
+
+
+
+
+    
 
 
 
@@ -444,27 +526,42 @@ iframe {
         margin: 2rem;
     }
 
-    nav li::first-letter {
-        text-transform: capitalize;
-    }
 
     .search-container {
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        justify-content: center; /* center horizontally */
+        padding: 10px; /* add some top margin */
+      }
+      
+      nav form {
+        display: flex;
+        align-items: center; 
+      }
+      
+      nav input[type="text"] {
+        padding: 10px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        width: 40em;
+      }
+      
+      nav button[type="button"] {
+        padding: 9px;
+        
+      }
 
-    .search-container i {
-        color: #c78c06;
-    }
+    
 
 
-    /* fix later */
-    .search-container input {
-        width: 200%;
-    }
+
 
     /* header starts */
+
+
+    .header-text {
+        padding: 10rem;
+    }
 
     /* about display text below the image */
 
@@ -531,38 +628,6 @@ nav ul {
 }
 
 
-/* header starts */
-header {}
-
-
-
-
-
-
-
-
-
-
-
-/* about us */
-
-
-
-
-
-
-
-
-/* services */
-.services {}
-
-
-
-
-
-
-
-.ourteam {}
 
 
 
@@ -581,6 +646,4 @@ footer a {
 }
 
 
-
-/* Contact Us  starts*/
 
