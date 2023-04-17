@@ -97,10 +97,11 @@
             each has a differnt class for flex posioning and a unique class for main styling in css-->
 
     <div class="wrapper">
+        <h2>Our Services</h2>
         <section id="services">
-            <h2>Our Services</h2>
 
-            <div class="digitalcontent services tan">
+
+            <div class="digitalcontent box tan">
                 <img src="images/digital.jpg" alt="image of person holding cell-phone on laplop">
 
                 <div class="services-text">
@@ -116,7 +117,7 @@
 
             </div>
 
-            <div class="marketingcontent services tan">
+            <div class="marketingcontent box tan">
                 <img src="images/marketing.jpg" alt="image of computer with charts with numbers">
 
 
@@ -133,7 +134,7 @@
 
             </div>
 
-            <div class="videocontent services tan">
+            <div class="videocontent box tan">
                 <img src="images/video.jpg" alt="image of person holding cell-phone with the youtube app open">
 
                 <div class="services-text">
@@ -149,7 +150,7 @@
 
             </div>
 
-            <div class="webcontent services tan">
+            <div class="webcontent box tan">
                 <img src="images/web.jpg" alt="image of cell-phone on a note book with a pen beside it">
 
 
@@ -168,7 +169,7 @@
 
             </div>
 
-            <div class="printcontent services tan">
+            <div class="printcontent box tan">
                 <img src="images/print.jpg" alt="image of newspaper boxes out on the street">
 
 
@@ -194,16 +195,24 @@
     <!-- no in the wrapper class because exends outside compared to the others -->
 
     <section class="vision">
-        <img src="images/vision.jpg" alt="image of paper boats in the water">
+
 
         <div class="wrapper">
-            <h3>Our Vision</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aperiam neque dicta libero dolores!
-                Explicabo
-                rem, veritatis enim saepe harum hic. Optio corporis possimus consequatur omnis excepturi aspernatur
-                facere
-                porro!</p>
-            <button class="button-design" type="button">Learn More <i class="fa-solid fa-caret-right"></i></button>
+            <img src="images/vision.jpg" alt="image of paper boats in the water">
+
+            <div class="vision-text">
+
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aperiam neque dicta libero dolores!
+                    Explicabo
+                    rem, veritatis enim saepe harum hic. Optio corporis possimus consequatur omnis excepturi aspernatur
+                    facere
+                    porro!</p>
+                <button class="button-design btn-black" type="button">Learn More <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+
+
+
         </div>
     </section>
 
@@ -215,35 +224,53 @@
     <div class="wrapper">
 
         <!-- our team section will be using flex to posision in both ways -->
-        <section class="ourteam tan">
+
+        <section class="ourteam">
             <h2>Our Team</h2>
-            <img class="johnimage" src="images/john.jpg" alt="image of a person standing ">
-            <div id="johndoe">
-                <h3>John Doe</h3>
-                <h4>CEO and Co-Owner</h4>
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo tenetur repellendus
-                    placeat
-                    ipsum maxime doloribus. At explicabo consequuntur, dolores, esse fugit perferendis harum deleniti
-                    tempora aliquam sunt ut doloribus.</p>
+
+            <div class="tan">
+                <img class="johnimage" src="images/john.jpg" alt="image of a person standing ">
+                <div id="johndoe">
+
+                    <div class="ourteam-text">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-Owner</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo tenetur
+                            repellendus
+                            placeat
+                            ipsum maxime doloribus. At explicabo consequuntur, dolores, esse fugit perferendis harum
+                            deleniti
+                            tempora aliquam sunt ut doloribus.</p>
+                    </div>
+
+                </div>
+
+                <img class="bobimage" src="images/bob.jpg" alt="image of a person standing">
+                <div id="robrite">
+                    <div class="ourteam-text">
+                        <h3>John Doe</h3>
+                        <h4>CFO and Co-Owner</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo tenetur
+                            repellendus
+                            placeat
+                            ipsum
+                            maxime doloribus. At explicabo consequuntur, dolores, esse fugit perferendis harum deleniti
+                            tempora
+                            aliquam
+                            sunt ut doloribus.</p>
+                    </div>
+
+
+                </div>
             </div>
 
-            <img class="bobimage" src="images/bob.jpg" alt="image of a person standing">
-            <div id="robrite">
-                <h3>John Doe</h3>
-                <h4>CFO and Co-Owner</h4>
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo tenetur repellendus
-                    placeat
-                    ipsum
-                    maxime doloribus. At explicabo consequuntur, dolores, esse fugit perferendis harum deleniti tempora
-                    aliquam
-                    sunt ut doloribus.</p>
-            </div>
+
         </section>
 
 
-        <section class="Contact">
+        <section class="contact">
             <h2>Contact Us</h2>
 
             <div class="form-box">
@@ -252,23 +279,19 @@
                 <form action="index.html">
                     <!-- Input field for fullname -->
                     <label for="fullname">Fullname</label>
-                    <div class="my-textbox">
-                        <input type="text" id="fullname" name="fullname" required>
-                    </div>
-
+        
+                        <input class="textbox1" type="text" id="fullname" name="fullname" required>
 
                     <!-- Input field for email -->
                     <label for="email">Email</label>
-                    <div class="my-textbox">
-
-                        <input type="email" id="email" name="email" required>
-                    </div>
+                    
+                        <input class="textbox1" type="email" id="email" name="email" required>
 
                     <!-- Input field for message -->
                     <label for="message">Your Message</label>
-                    <div class="my-textbox2">
-                        <input type="text" name="message" id="message">
-                    </div>
+                    
+                        <input class="textbox1 textbox2" type="text" name="message" id="message">
+                   
 
                     <!-- Submit button for the form -->
                     <button type="submit">Send</button>
@@ -278,7 +301,7 @@
             </div>
 
             <!-- table of days store is open, table top class is put in place to colour the top section of table-->
-            <div class="Openhours">
+            <div class="openhours">
                 <h2>Hours of operation</h2>
                 <table>
                     <tr class="tabletop">
