@@ -295,63 +295,72 @@
             <h2>Contact Us</h2>
 
 
-            <div class="form-box">
-                <h3>Send us a message</h3>
-                <!-- form starts here -->
-                <form action="index.html">
-                    <div id="textboxs">
-                        <!-- Input field for fullname -->
-                    <label for="fullname">Fullname</label>
-
-                    <input class="textbox1" type="text" id="fullname" name="fullname" required>
-
-                    <!-- Input field for email -->
-                    <label for="email">Email</label>
-
-                    <input class="textbox1" type="email" id="email" name="email" required>
-
-                    <!-- Input field for message -->
-                    <label for="message">Your Message</label>
-
-                    <input class="textbox1 textbox2" type="text" name="message" id="message">
-                    </div>
-                    
 
 
-                    <!-- Submit button for the form -->
-                    <button type="submit">Send</button>
 
-                </form>
-                <!-- form ends here -->
+            <div class="contact-contaner">
+                <div class="form-box contact-box">
+                    <h3>Send us a message</h3>
+                    <!-- form starts here -->
+                    <form action="index.html">
+                        <div id="textboxs">
+                            <!-- Input field for fullname -->
+                        <label for="fullname">Fullname</label>
+    
+                        <input class="textbox1" type="text" id="fullname" name="fullname" required>
+    
+                        <!-- Input field for email -->
+                        <label for="email">Email</label>
+    
+                        <input class="textbox1" type="email" id="email" name="email" required>
+    
+                        <!-- Input field for message -->
+                        <label for="message">Your Message</label>
+    
+                        <input class="textbox1 textbox2" type="text" name="message" id="message">
+                        </div>
+                        
+    
+    
+                        <!-- Submit button for the form -->
+                        <button type="submit">Send</button>
+    
+                    </form>
+                    <!-- form ends here -->
+                </div>
+    
+                <!-- table of days store is open, table top class is put in place to colour the top section of table-->
+                <div class="openhours contact-box">
+                    <h2>Hours of operation</h2>
+                    <table>
+                        <tr class="tabletop">
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </tr>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <!-- map of algonquin liked through google maps -->
+                <div class="map contact-box">
+                    <h2>Location</h2>
+    
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89734.88054137913!2d-75.8069955756491!3d45.344471709205095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680611018580!5m2!1sen!2sca"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
 
-            <!-- table of days store is open, table top class is put in place to colour the top section of table-->
-            <div class="openhours">
-                <h2>Hours of operation</h2>
-                <table>
-                    <tr class="tabletop">
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </table>
-            </div>
 
-            <!-- map of algonquin liked through google maps -->
-            <div class="map">
-                <h2>Location</h2>
 
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89734.88054137913!2d-75.8069955756491!3d45.344471709205095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680611018580!5m2!1sen!2sca"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            
 
         </section>
 
@@ -364,6 +373,8 @@
             <p>All images are taken from <a href="https://unsplash.com/">unsplash</a></p>
         </div>
     </footer>
+
+    
 
 </body>
 

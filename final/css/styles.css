@@ -467,6 +467,14 @@ iframe {
         flex-direction: column;
     }
 
+    /* ordering the contact items in the right order */
+
+    .contact-contaner  {
+        display: flex;
+    }
+    .contact-contaner .contact-box:nth-child(2) {
+        order: 1;
+    }
 
     
       
