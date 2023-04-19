@@ -130,14 +130,9 @@ table {
     border-spacing: 0;
 }
 
-
-
-
-
-
 /* starts here */
 
-
+/* adds the font to the entire page, the button design, adjusts heading text adds background colour to all the parts of the page  */
 body {
     font-family: 'Open Sans', sans-serif;
 
@@ -147,10 +142,9 @@ body {
     background-color: #ffe6ac;
 }
 
-
-
 h2 {
     font-weight: bold;
+    padding: 1rem;
 }
 
 .button-design {
@@ -177,6 +171,7 @@ h2 {
 
 
 /* nav */
+/* every first letter of the nav is capitalize  and button is customized*/
 nav li::first-letter {
     text-transform: capitalize;
 }
@@ -188,17 +183,21 @@ nav li::first-letter {
     background-color: #222;
 }
 
+.homenav {
+    background-color: #c78c06;
+}
 
+nav {
+    background-color: #222;
+    color: #c78c06;
+}
 
-
-
-
-
-
+nav ul {
+    list-style: none;
+}
 
 
 /* header starts */
-
 
 header p,
 h1 {
@@ -206,22 +205,18 @@ h1 {
 }
 
 header .wrapper {
+    display: flex;
     flex-direction: column;
     position: relative;
 }
 
+/* lowers the opacity of the background */
 .header-text {
     position: absolute;
-
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.8);
     padding: 20px 10px 10px 20px;
 
 }
-
-header .wrapper {
-    display: flex;
-}
-
 
 /* about */
 
@@ -240,6 +235,7 @@ header .wrapper {
 }
 
 /* Our Services */
+/* changes spacing */
 .services {
     margin-top: 28px;
 }
@@ -250,17 +246,19 @@ header .wrapper {
 }
 
 .services img {
-    width: 100%;
+    max-width: 100%;
+    
 }
 
 .services-text {
     padding: 1.1rem;
 }
 
-.ourteam .ourteam-text,
-p,
-h4,
-h3 {
+
+/* our team */
+/* changes spacing and some colours of hr*/
+
+.ourteam-text, p, h4,h3 {
     padding: 0.5rem;
 }
 
@@ -268,72 +266,7 @@ h3 {
     color: #c78c06;
 }
 
-/* Contact */
-
-.contact .textbox1 {
-    width: 500px;
-}
-
-.contact .textbox2 {
-    height: 7rem;
-}
-
-
-
-.contact button {
-    background-color: #222;
-    color: #c78c06;
-    border: none;
-    padding: 3px;
-    margin: 1rem 1rem 1rem 0;
-    font-size: 1rem;
-}
-
-
-
-/* table, adds border colours top bit */
-
-table,
-td,
-th {
-    border: 1px solid black;
-
-}
-
-table {
-    width: 100%;
-
-    border-collapse: collapse;
-}
-
-.tabletop {
-    background-color: #ffe6ac;
-}
-
-.openhours th,
-td {
-    padding: 1rem;
-}
-
-
-
-
-iframe {
-    border: none;
-    width: 100%;
-    height: 30rem;
-}
-
-
-
-
-
 /* our vision places text on top of image displays flex horizontal*/
-
-
-
-
-
 
 .vision img {
     width: 100%;
@@ -354,26 +287,86 @@ iframe {
     border: 1px solid #c78c06;
 }
 
-
-
-
- .ourteam {
+.ourteam {
     flex-direction: column;
 }
 
 .johnimage,
 .bobimage {
     max-width: 100%;
-} 
+}
+
+
+/* Contact */
+/* adjusts the length of the textboxes */
+
+.contact .textbox1 {
+    width: 500px;
+}
+
+.contact .textbox2 {
+    height: 7rem;
+}
+
+
+.contact button {
+    background-color: #222;
+    color: #c78c06;
+    border: none;
+    padding: 3px;
+    margin: 1rem 1rem 1rem 0;
+    font-size: 1rem;
+}
+
+
+/* table, adds border colours top bit */
+
+table,
+td,
+th {
+    border: 1px solid black;
+
+}
+
+table {
+    width: 100%;
+}
+
+.tabletop {
+    background-color: #ffe6ac;
+}
+
+.openhours th,
+td {
+    padding: 1rem;
+}
+
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 30rem;
+}
 
 
 
 
+/* footer starts */
+/* adds colours */
 
+footer {
+    background-color: #222;
+    color: #c78c06;
+}
 
+footer a {
+    color: #c78c06;
+}
 
 /* for the pc */
 @media screen and (min-width: 760px) {
+
+    /* adjustes heading text to size to pc size */
     h1 {
         font-size: 4rem;
     }
@@ -387,37 +380,77 @@ iframe {
     }
 
     p {
-        font-size: 1rem;
+        font-size: .9rem;
     }
 
-
+    /* keeps the content organized on a single container */
     .wrapper {
         align-items: center;
         justify-content: center;
-        margin-left: 28px;
-        margin-right: 28px;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 
-
+    /* header starts */
     header .wrapper {
         display: flex;
     }
 
+    .header-text h1, p {
+        padding: 1rem;
 
+    }
 
-    /* nav */
-    nav ul {
+    header .header-text {
+        padding: 3rem 3rem 2rem 2rem;
+    }
+
+    /* nav starts */
+    /* displays layout on a horozontal verson layed out across side by side */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .topnav {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .topnav li {
+        background-color: #c78c06;
+        padding: 1.5rem;
+        color: #222;
+    }
+
+    .topnav img {
+        width: 80px;
+        margin-right: 10rem;
+    }
+
+    ul {
         display: flex;
     }
 
-
-    /* services */
-
-
-    /* header */
-    header {
-        
+    ul li {
+        margin-right: 60px;
+        font-size: 16px;
     }
+
+    .search-container input[type="text"] {
+        padding: 8px;
+        border: none;
+        font-size: 16px;
+    }
+
+    .search-container button[type="button"] {
+        font-size: 16px;
+    }
+
+    
 
 
     /* about */
@@ -426,7 +459,7 @@ iframe {
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .about {
@@ -445,6 +478,16 @@ iframe {
     .about-text {
         order: 2;
         max-width: 50%;
+    }
+
+
+    /* services */
+
+    .services-grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
     }
 
 
@@ -469,29 +512,46 @@ iframe {
 
     /* ordering the contact items in the right order */
 
-    .contact-contaner  {
+    .contact {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
-    .contact-contaner .contact-box:nth-child(2) {
+
+    .contact-contaner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .map {
+        flex-basis: calc(50% - 20px);
+        margin: 0 20px 20px 0;
+    }
+
+
+    .openhours {
+        flex-basis: calc(100% - 40px);
+        margin: 0 20px 20px 0;
         order: 1;
     }
 
-    
-      
-      
-      
 
+    .form-box {
+        flex-basis: 50%;
+        margin-right: 0px;
+    }
 
+    .openhours table {
+        width: 100%;
+        max-width: 800px;
 
+    }
 
-    
-
-
-
-
-
-
-
+    .contact h2 {
+        padding: 1rem;
+    }
 
 }
 
@@ -508,8 +568,6 @@ iframe {
     h3 {
         font-size: 2rem;
     }
-
-
 
     p {
         font-size: small;
@@ -534,38 +592,33 @@ iframe {
         margin: 2rem;
     }
 
-
     .search-container {
         display: flex;
-        justify-content: center; /* center horizontally */
-        padding: 10px; /* add some top margin */
-      }
-      
-      nav form {
+        justify-content: center;
+        /* center horizontally */
+        padding: 10px;
+        /* add some top margin */
+    }
+
+    nav form {
         display: flex;
-        align-items: center; 
-      }
-      
-      nav input[type="text"] {
+        align-items: center;
+    }
+
+    nav input[type="text"] {
         padding: 10px;
         font-size: 1rem;
         border: none;
         border-radius: 5px 0 0 5px;
         width: 40em;
-      }
-      
-      nav button[type="button"] {
+    }
+
+    nav button[type="button"] {
         padding: 9px;
-        
-      }
 
-    
-
-
-
+    }
 
     /* header starts */
-
 
     .header-text {
         padding: 10rem;
@@ -590,68 +643,4 @@ iframe {
         margin-right: auto;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* nav custom starts */
-.homenav {
-    background-color: #c78c06;
-}
-
-nav {
-    background-color: #222;
-    color: #c78c06;
-}
-
-nav ul {
-    list-style: none;
-}
-
-
-
-
-
-
-
-
-
-/* footer starts */
-footer {
-    background-color: #222;
-    color: #c78c06;
-}
-
-footer a {
-    color: #c78c06;
-}
-
-
-
