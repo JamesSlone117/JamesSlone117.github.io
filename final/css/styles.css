@@ -245,7 +245,7 @@ header .wrapper {
 .services-grid img {
     max-width: 100%;
     align-items: center;
-    
+
 }
 
 .services-text {
@@ -256,7 +256,10 @@ header .wrapper {
 /* our team */
 /* changes spacing and some colours of hr*/
 
-.ourteam-text, p, h4,h3 {
+.ourteam-text,
+p,
+h4,
+h3 {
     padding: 0.5rem;
 }
 
@@ -394,7 +397,8 @@ footer a {
         display: flex;
     }
 
-    .header-text h1, p {
+    .header-text h1,
+    p {
         padding: 1rem;
 
     }
@@ -501,6 +505,7 @@ footer a {
         margin: 4rem;
 
     }
+
     .vision .wrapper {
         margin: 5rem 0.1rem 0.1rem 1rem;
         width: 100%;
@@ -555,7 +560,7 @@ footer a {
         flex-basis: calc(100% - 40px);
         margin: 0 20px 20px 0;
         order: 1;
-        
+
     }
 
 
@@ -563,12 +568,13 @@ footer a {
         flex-basis: 50%;
         margin-right: 0px;
     }
+
     /* extends table to fit */
     .openhours table {
         max-width: 100%;
         align-items: center;
         position: relative;
-        
+
 
     }
 
@@ -576,8 +582,8 @@ footer a {
         padding: 1rem;
         position: relative;
     }
-    
-    
+
+
 
 }
 
@@ -649,6 +655,7 @@ footer a {
     .header-text {
         padding: 10rem;
     }
+
     .header img {
         margin: 1rem 0.1rem 0.1rem 1rem;
         align-items: center;
@@ -683,7 +690,7 @@ footer a {
     }
 
     .contact-contaner {
-       position: relative;
+        position: relative;
     }
 
 
