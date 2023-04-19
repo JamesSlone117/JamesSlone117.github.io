@@ -619,6 +619,13 @@ footer a {
         background-color: #c78c06;
         color: #222;
     }
+    .topnav {
+        margin: 1rem;
+    }
+    .topnav li {
+        padding-bottom: 1rem;
+    }
+    
 
     nav li {
         text-align: center;
@@ -630,6 +637,7 @@ footer a {
         display: flex;
         justify-content: center;
         padding: 10px;
+        max-width: 100%;
     }
 
     nav form {
